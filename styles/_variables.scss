@@ -1,0 +1,16 @@
+// variables
+$bg_dark: hsl(207, 26%, 17%);
+$bg_light: hsl(0, 0%, 98%);
+$element_bg_dark: hsl(209, 23%, 22%);
+$element_bg_light: hsl(0, 0%, 100%);
+$input_light: hsl(0, 0%, 52%);
+$text_light: hsl(200, 15%, 8%);
+
+$cummon_style: 1em 5em;
+
+@mixin cummon_element_style {
+  background-color: var(--el_color);
+  color: var(--text_color);
+  border-radius: 0.3em;
+  box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.171);
+}

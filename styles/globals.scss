@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap");
+@import "./variables";
+
+:root {
+  --bg_color: #{$bg_light};
+  --text_color: #{$text_light};
+  --el_color: #{$element_bg_light};
+  --input_color: #{$input_light};
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: "Nunito Sans", -apple-system, BlinkMacSystemFont, Segoe UI,
+    Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+    sans-serif;
+  font-weight: 300;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+@media screen and (max-width: 475px) {
+  html,
+  body {
+    font-size: 0.875rem;
+  }
+}
