@@ -7,7 +7,7 @@ function CountryCard({ data, flag }) {
   return (
     <div className={styles.card} onClick={() => router.push(`/${data.name}`)}>
       <div className={styles.img_field}>
-        <Image src={flag} alt="fuck you image" layout="fill" />
+        <Image src={flag} alt="flag" layout="fill" />
       </div>
       <div className={styles.content}>
         <h3>{data.name}</h3>

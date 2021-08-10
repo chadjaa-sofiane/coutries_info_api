@@ -1,10 +1,10 @@
 import { useState, useEffect, useCallback, useMemo } from "react";
 import styles from "../styles/Home.module.scss";
-import CountryCard from "./countryCard";
+import CountryCard from "./CountryCard";
 import SearchBar from "./SearchBar";
 
 function ResultField({ countriesData }) {
-  const defaultCountriesData = useMemo(() => [...countriesData]);
+  const defaultCountriesData = useMemo(() => [...countriesData],[]);
   const [countries, setCountries] = useState(defaultCountriesData);
   const [textSearch, setTextSearch] = useState("");
   const [value, setValue] = useState("");
@@ -17,7 +17,7 @@ function ResultField({ countriesData }) {
         (value ? e.region === value : true)
     );
     setCountries([...newCountries]);
-  }, [textSearch, value]);
+  }, [textSearch, value,countriesData]);
   // useEffect hock will not aplly till the textSearch and region value change
   useEffect(() => filterCountries(), [filterCountries]);
   return (

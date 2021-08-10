@@ -13,7 +13,7 @@ function Country({ data }) {
       </Link>
       <div className={styles.detailPageContainer}>
         <div className={styles.flag}>
-          <Image src={data.flag} layout="fill" />
+          <Image src={data.flag} layout="fill" alt="flag"/>
         </div>
         <div className={styles.detailsField}>
           <h1>{data.name}</h1>
