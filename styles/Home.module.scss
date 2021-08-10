@@ -40,12 +40,13 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   .search_field {
     @include cummon_element_style;
     padding: 0.8em 1.5em;
     min-width: 30em;
     display: flex;
+    margin-bottom: 2em;
     input {
       width: 100%;
       background-color: transparent;
@@ -109,7 +110,7 @@
 }
 
 .result_container {
-  margin-top: 2.5em;
+  margin-top: 1em;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
   gap: 4em;
@@ -230,6 +231,9 @@
     padding: $cummon_style;
     width: 100%;
   }
+ /*  .continents_filter_Field{
+    margin-top: 2em;
+  } */
   .flag {
     height: 20em;
     margin-top: 2em;
