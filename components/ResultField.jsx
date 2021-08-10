@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback, useMemo } from "react";
 import styles from "../styles/Home.module.scss";
 import CountryCard from "./countryCard";
-import SearchBar from "../components/SearchBar";
+import SearchBar from "./SearchBar";
 
 function ResultField({ countriesData }) {
   const defaultCountriesData = useMemo(() => [...countriesData]);
