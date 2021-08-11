@@ -118,7 +118,6 @@
 .card {
   @include cummon_element_style;
   overflow: hidden;
-  max-height: 25em;
   cursor: pointer;
 }
 .details {
@@ -136,7 +135,7 @@
 .img_field {
   position: relative;
   width: 100%;
-  height: 12em;
+  height: 8em;
   img {
     width: 100%;
     object-fit: cover;
@@ -146,7 +145,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 2em 1.5em;
+  padding: 1em 1.5em;
 }
 
 .detailPageWrapper {
